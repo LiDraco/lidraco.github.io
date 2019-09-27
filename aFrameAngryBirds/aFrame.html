@@ -1,5 +1,7 @@
 <html>
-
+<!--Models are from Sketchup Warehouse-->
+<!--Textures are from sketchuptextureclub, vecteezy, and 123RF-->
+<!--Background by Graeme Davidson -->
 <head>
     <script src="https://aframe.io/releases/0.9.2/aframe.min.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/donmccurdy/aframe-extras@v6.0.1/dist/aframe-extras.min.js"></script>
@@ -10,7 +12,7 @@
     <a-scene>
         <a-assets>
             <img id="ground1" src="img/ground1.jpg">
-            <img id="background1" src="img/background1.png">
+            <img id="background1" src="img/background1.jpg">
             <img id="wood1" src="img/wood1.jpg">
             <img id="wood2" src="models/slingshot/wood2.jpg">
             <img id="ice1" src="img/ice1.jpg">
@@ -22,14 +24,30 @@
 
         </a-assets>
         <a-entity gltf-model="#pig" position="5 2.15 -3.9" rotation="0 -19 0" scale="0.04 0.04 0.04"></a-entity>
-        <a-entity gltf-model="#red" position="-3.7 0 -3" scale="0.1 0.1 0.1"></a-entity>
-        <a-entity gltf-model="#red" position="-3 0 -3" scale="0.1 0.1 0.1"></a-entity>
-        <a-entity gltf-model="#slingshot" position="-5 .1 -3.8" scale="0.5 0.5 0.5" rotation="0 180 0"
-            material="src: #wood1" ></a-entity>
-        <a-entity gltf-model="#red" position="-5 1.1 -3" scale="0.1 0.1 0.1" rotation="0 0 45"> </a-entity>
+        <a-entity gltf-model="#red" position="-7.7 0 -3"
+            animation="property: position; from: -7.7 .2 -3;to: -7.7 -.05 -3; dur: 500;easing: linear; dir: alternate; loop:true; easing:easeInCirc; elasticity:300; "
+            scale="0.1 0.1 0.1">
+        </a-entity>
+        <a-entity gltf-model="#red" position="-7 0 -3"
+            animation="property: position; from: -7 .2 -3;to: -7 -0.05 -3; dur: 500;easing: linear; dir: alternate; delay: 500;loop:true; easing:easeInCirc; elasticity:300;  "
+            scale="0.1 0.1 0.1"></a-entity>
+        <a-entity gltf-model="#slingshot" position="-9 .1 -3.8" scale="0.5 0.5 0.5" rotation="0 180 0"
+            material="src: #wood1"></a-entity>
 
+        <!--Launched Bird-->
+        <a-box material=" src: #wood1 ;visible:false" position="-4.4 -1 -3"
+            animation="delay:2000; property: position; to: -4.8 -1.2 -3; dur: 1000; easing:linear; "
+            animation__2="delay:2500; property: rotation; to:0 0 -120;  dur: 3000; easing: linear;"
+            animation__3=" delay:2500; property: position; from:-4.8 -1.2 -3;to:9 -2 -3;  dur: 3000; easing: linear;"
+            animation__4="delay:5500; property: rotation; from:0 0 -120; to:0 0 -240;  dur: 2000; easing: linear;"
+            animation__5=" delay:5500; property: position; from:9 -2 -3; to:9 -3 -3;  dur: 3000; easing: linear;">
+            <a-entity gltf-model="#red" position="-9 2 -3" scale="0.15 0.15 0.15" rotation="0 0 45"
+                animation="delay:2500; property: rotation; to:0 0 90;  dur: 2000; easing: linear;">
 
-
+            </a-entity>
+        </a-box>
+        <a-entity camera wasd-controls look-controls position="0 1.6 4">
+        </a-entity>
 
         <!--leftmost block-->
         <a-box material="src: #wood1" position="3.7 0.72 -4" scale=" .15 .35 .15"></a-box>
@@ -98,8 +116,8 @@
         <a-box material="src: #wood1" position="5.25 3.599 -4" scale=" .15 .35 .15"></a-box>
 
         <!--ground-->
-        <a-plane material="src: #ground1" repeat="15 5" side="front" position="0 0 -4" rotation="-90 0 0" width="20"
-            height="5">
+        <a-plane material="src: #ground1" repeat="200 200" side="front" position="0 0 -4" rotation="-90 0 0" width="200"
+            height="200">
         </a-plane>
 
         <a-sky src="#background1"></a-sky>
