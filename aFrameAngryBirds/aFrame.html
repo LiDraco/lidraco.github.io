@@ -41,19 +41,17 @@
         <!--Launched Bird-->
         <a-box width="75" height="0.1" depth="75" position="0 -0.05 0" static-body visible="false"></a-box>
 
-        <a-entity id="launched bird" dynamic-body="mass:30;" velocity="9 5 0" gltf-model="#red" position="-5 2 -3"
+        <a-entity id="launched bird" dynamic-body="mass:100;" velocity="9 5 0" gltf-model="#red" position="-5 2 -3.3"
             scale="0.123 0.123 0.123" animation="delay:6000; property: visible; to:false ">
         </a-entity>
-        <a-entity id="camera" camera position="0 1.6 12"
-            animation="delay:4000; dur:1; property: position; to: 0 1.6 12">
-        </a-entity>
+        <a-entity id = "camera" camera  position="0 1.6 12" animation="delay:4000; dur:1; property: position; to: 0 1.6 12">
+          </a-entity>
 
         <!--leftmost block-->
         <a-box c material="src: #wood1" position="3.7 0.72 -4" scale=" .15 .35 .15" dynamic-body force-pushable shadow>
         </a-box>
         <!--rightmost block-->
-        <a-box material="src: #wood1" position="6.74 0.72 -4" scale=" .15 .35 .15" dynamic-body force-pushable shadow
-            animation="delay:6000; property: visible; to:false ">
+        <a-box material="src: #wood1" position="6.74 0.72 -4" scale=" .15 .35 .15" dynamic-body force-pushable shadow animation="delay:6000; property: visible; to:false ">
         </a-box>
 
         <!--scaffolding top-->
@@ -156,10 +154,9 @@
     </a-scene>
 </body>
 
-<script>
+  <script>
     window.addEventListener('click', function () {
-        document.querySelector("#camera").body.position.set(0, 1.6, 12);
+      document.querySelector("#camera").body.position.set(0, 1.6, 12);
     });    
-</script>
-
+  </script>
 </html>
