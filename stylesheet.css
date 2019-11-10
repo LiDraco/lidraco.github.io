@@ -3,6 +3,24 @@
 body {
     margin: 0;
     background-color: rgb(122, 128, 133);
+    position: fixed;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+/* Top right text */
+
+.top-right {
+    position: absolute;
+    display: block;
+    top: 40px;
+    left: 1500px;
+    font-family: 'Roboto';
+    font-size: 46px;
+    color: #2e2e2e;
+
 }
 
 .navBar {
