@@ -56,10 +56,14 @@ body::-webkit-scrollbar {
 
 .icon-block .material-icons {
   font-size: inherit;
+  display: inline-flex;
 }
 
 footer.page-footer {
-  margin: 0;
   background-color: rgb(36, 30, 30);
-  
+}
+
+footer.page-footer li {
+  float: Left;
+  width: 50px;
 }
