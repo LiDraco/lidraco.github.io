@@ -1,239 +1,110 @@
-/*Navigation Bar*/
+* {
+    font-family: 'Roboto', sans-serif;
+}
 
 body {
     margin: 0;
-    background-color: rgb(122, 128, 133);
-    position: fixed;
+}
+
+body::-webkit-scrollbar {
+    /* Hides Scrollbar */
+    width: 0 !important
+}
+
+.parallax_one {
+    background-image: url("https://i.imgur.com/VaPTDi5.jpg");
+    height: 500px;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.name {
+    text-align: center;
+    font-size: 72px;
+    color: rgb(155, 148, 148);
+    padding: 0px;
+    margin: 0;
+    line-height: 10rem;
+}
+
+.parallax_two {
+    background-image: url("https://i.imgur.com/gSgw8jY.jpg");
+    height: 500px;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: auto;
+}
+
+.container {
+    height: 600px;
+    background-color: rgb(36, 30, 30);
+    padding: 0px 500px 0px 500px;
+    font-size: 36px;
+}
+
+.subtitles {
+    text-align: center;
+    margin: 0;
+    font-size: 36px;
+    line-height: 8rem;
+}
+
+.minititle {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.row {
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    color: rgb(155, 148, 148);
+    margin-top: 0px;
+}
+
+.content_block {
+    float: left;
+    display: block;
     width: 50%;
+    margin-left: auto;
+    left: auto;
+    right: auto;
+    padding: 0 0.75rem;
+    box-sizing: border-box;
 }
 
-/* Top right text */
-
-.top-right {
-    position: absolute;
+.content_text {
     display: block;
-    top: 40px;
-    left: 1500px;
-    font-family: 'Roboto';
-    font-size: 46px;
-    color: #2e2e2e;
-
+    box-sizing: inherit;
+    font-size: 14px;
+    color: rgb(155, 148, 148);
+    margin: 0px;
 }
 
-.navBar {
-    background-color: rgb(83, 87, 90);
-    overflow: hidden;
-    font-family: 'Roboto';
-    font-style: normal;
-    display: block;
-    text-align: right;
-}
-
-.navBar a {
-    float: right;
-    color: #f2f2f2;
-    vertical-align: middle;
-    padding: 16px 30px 16px 30px;
-    text-decoration: none;
-    font-size: 16px;
+#center.row {
+    margin-top: 0px;
+    padding-top: 2rem;
+    margin-bottom: 0px;
     text-align: center;
 }
 
-.navBar a:hover {
-    background-color: #ddd;
-    color: black;
+.parallax_three {
+    background-image: url("https://i.imgur.com/GeuUVom.jpg");
+    height: 500px;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
 }
 
-.navBar a.active {
-    background-color: #67a0bb;
-    color: white;
-}
-
-/*Sidebar*/
-
-.sideBar {
-    font-family: 'Roboto';
-    height: 100%;
-    width: 160px;
-    position: fixed;
-    z-index: 1;
-    top: 0;
+.footer {
+    page-break-after: always;
+    position: relative;
     left: 0;
-    background-color: rgb(83, 87, 90);
-    overflow-x: hidden;
-    /* Disable horizontal scroll */
-    padding-top: 20px;
-}
-
-.sideBar a {
-    padding: 6px 8px 30px 16px;
+    bottom: 0;
+    height: 100px;
+    background-color: rgb(36, 30, 30);
     text-align: center;
-    text-indent: 50px;
-    text-decoration: none;
-    font-size: 36px;
-    color: #cfcaca;
-    display: flex;
-}
-
-.sideBar a:hover {
-    color: #67a0bb;
-}
-
-.profile {
-    border-radius: 50%;
-    max-width: 100%;
-    max-height: 100%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-}
-
-.fa {
-    padding: 20px;
-    font-size: 30px;
-    width: 50px;
-    text-align: center;
-    text-decoration: none;
-}
-
-.fa:hover {
-    opacity: 0.7;
-}
-
-.homeprofile h1 {
-    text-align: center;
-    font-size: 40px;
-    color: #e6dfdf;
-    margin-left: 25px;
-}
-
-.homepic {
-    margin-left: 125px;
-    border-radius: 50%;
-    max-width: 18%;
-    max-height: 18%;
-    display: block;
-    margin-top: 50px;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-}
-
-.homeprofile a {
-    padding: 6px 8px 30px 16px;
-    text-align: center;
-    text-indent: 0px;
-    text-decoration: none;
-    font-size: 36px;
-    color: #cfcaca;
-    display: block;
-}
-
-.projects {
-    text-align: center;
-    font-family: 'Source Sans Pro', sans-serif;
-}
-
-.discordbot {
-    margin-left: 125px;
-    width: 50%;
-    margin-top: 50px;
-}
-
-.projects h1 {
-    font-size: 36px;
-    color: #e6dfdf;
-    margin-left: 125px;
-}
-
-.projects p {
-    color: #e6dfdf;
-    font-size: 24px;
-    word-wrap: break-word;
-    line-height: 50px;
-    width: 800px;
-    margin-left: 600px;
-}
-
-.about {
-    text-align: center;
-    font-family: 'Source Sans Pro', sans-serif;
-}
-
-.aboutPic {
-    margin-left: 50px;
-    margin-top: 40px;
-    width: 20%;
-    border-radius: 0;
-}
-
-.about p {
-    font-size: 24px;
-    color: #e6dfdf;
-    text-decoration: none;
-    word-wrap: break-word;
-    line-height: 50px;
-    display: block;
-    margin-left: 600px;
-    margin-top: 30px;
-    width: 800px;
-}
-
-.experience {
-    font-family: 'Source Sans Pro', sans-serif;
-}
-
-.experience a {
-    text-align: right;
-    font-size: 24px;
-    color: #e6dfdf;
-    text-decoration: none;
-    word-wrap: break-word;
-    line-height: 50px;
-    display: block;
-    margin-left: 230px;
-    margin-top: 60px;
-    width: 800px;
-}
-
-.experience p {
-    color: #e6dfdf;
-    font-size: 18px;
-    margin-left: 750px;
-    margin-top: 80px;
-    max-width: 500px;
-    word-wrap: break-word;
-    position: absolute;
-}
-
-.mathenrichment {
-    font-family: 'Source Sans Pro', sans-serif;
-    color: #e6dfdf;
-    font-size: 18px;
-    margin-left: 750px;
-    margin-top: 250px;
-    max-width: 500px;
-    word-wrap: break-word;
-    position: absolute;
-}
-
-.bigger {
-    font-size: 20px;
-}
-
-.habla {
-    text-align: left;
-    margin-left: 600px;
-    margin-top: 75px;
-    width: 5%;
-    position: absolute;
-}
-
-.main {
-    margin-left: 160px;
-    /* Same as the width of the sidebar */
 }
