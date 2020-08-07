@@ -4,6 +4,7 @@
 
 html {
   background-color: rgb(36, 30, 30);
+  overscroll-behavior: none;
 }
 
 nav ul a, nav .brand-logo {
