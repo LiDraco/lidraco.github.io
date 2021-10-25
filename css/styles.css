@@ -63,8 +63,8 @@ h1 {
 p{
   font-size: 18px;
   text-align: left;
-  margin-left: 500px;
-  margin-right: 500px;
+  margin-left: 30vw;
+  margin-right: 30vw;
 }
 mark {
   background-color:#ffffff00;
@@ -98,7 +98,7 @@ mark {
 footer {
   height: 1em;
   padding-bottom: 1em;
-  position: absolute;
+  position: fixed ;
   bottom: 0;
   animation-name: color-change, breathing;
   animation-duration: 2s, 3s;
