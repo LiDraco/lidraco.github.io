@@ -1,9 +1,9 @@
 body {
   margin-top: 4em;
-  font-family: "Roboto", sans-serif;
+  font-family: "Georgia", serif;
   background-size: auto;
   background-repeat: no-repeat;
-
+  color: rgba(0, 0, 0, 0.7);
   background: #EEE9E3;
 }
 #profile {
@@ -40,7 +40,6 @@ h1 {
   height: 50px;
   white-space: nowrap;
   overflow: hidden;
-  color: rgba(0, 0, 0, 0.7);
   position: relative;
   display: inline-block;
 }
