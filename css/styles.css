@@ -4,7 +4,7 @@ body {
   background-size: auto;
   background-repeat: no-repeat;
 
-  background: #d9f1f1;
+  background: #EEE9E3;
 }
 #profile {
   border-radius: 50%;
@@ -36,7 +36,7 @@ li {
   font-size: 20px;
 }
 h1 {
-  font-size: 40px;
+  font-size: 36px;
   height: 50px;
   white-space: nowrap;
   overflow: hidden;
@@ -62,8 +62,17 @@ h1 {
   animation: animated-cursor 600ms steps(50, end) infinite;
 }
 p{
-  font-size: 20px;
+  font-size: 18px;
+  text-align: left;
+  margin-left: 500px;
+  margin-right: 500px;
 }
+mark {
+  background-color:#ffffff00;
+  color: #EEBC1D;
+}
+
+
 /* text animation */
 
 @keyframes animated-text {
